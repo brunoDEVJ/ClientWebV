@@ -1,0 +1,59 @@
+/*LOGIN*/
+
+
+.imglogin {
+    width: 200px;
+    height: 200px;
+}
+
+.container-form {
+    height: 100vh;
+}
+
+.login-form {
+    width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.login-form input[type = "email"] {
+    /* margin-bottom: -1px; */
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.login-form input[type = "password"] {
+    margin-top: -1px;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.login-links a{
+    font-size: 0.8em;
+    font-weight: 600;
+     text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.p{
+font-size: 0.78em;
+justify-content: flex-end;
+align-content: flex-end;
+}
+
+.mt-6 {
+    margin-top: 100%;
+    margin-bottom: 0;
+}
+
+
+.vw {
+    width: 100vw;
+    height: 100vh;
+    
+}

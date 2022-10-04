@@ -1,0 +1,38 @@
+import React from "react";
+function Post() {
+  return (
+    <section id="post">
+      <div className="container">
+      <div id="carouselExampleInterval" className="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active" data-bs-interval="5000">
+        <h3>Execelente ferramenta para acompanhar o uso no  dia a dia</h3>
+      <img src="imgs/cliente.jpg" alt="Post de clientes"/>
+      <em>Bruno Lima - MG</em>
+    </div>
+    <div className="carousel-item" data-bs-interval="3000">
+        <h3>Execelente ferramenta para acompanhar o uso no  dia a dia</h3>
+      <img src="imgs/cliente.jpg" alt="Post de clientes"/>
+      <em>Bruno Lima - MG</em>
+    </div>
+    <div className="carousel-item">
+        <h3>Execelente ferramenta para acompanhar o uso no  dia a dia</h3>
+      <img src="imgs/cliente.jpg" alt="Post de clientes"/>
+      <em>Bruno Lima - MG</em>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+    </section>
+  );
+}
+
+export default Post;
