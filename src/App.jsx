@@ -22,15 +22,15 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="webvltech.herokuapp.com/" element={<Site />} />
-        <Route path="webvltech.herokuapp.com/app" element={<Login />} />
-        <Route path="webvltech.herokuapp.com/app/novaconta" element={<NovaConta />} />
-        <Route path="webvltech.herokuapp.com/app/resetsenha" element={<ResetSenha />} />
-        <Route path="webvltech.herokuapp.com/app/clientes" element={<Clientes />} />
-        <Route path="webvltech.herokuapp.com/app/home" element={<Home />} />
-        <Route path="webvltech.herokuapp.com/app/novocliente" element={<NovoCliente />} />
+        <Route path="/" element={<Site />} />
+        <Route path="/app" element={<Login />} />
+        <Route path="/app/novaconta" element={<NovaConta />} />
+        <Route path="/app/resetsenha" element={<ResetSenha />} />
+        <Route path="/app/clientes" element={<Clientes />} />
+        <Route path="/app/home" element={<Home />} />
+        <Route path="/app/novocliente" element={<NovoCliente />} />
         <Route
-          path="webvltech.herokuapp.com/app/editarcliente/:id"
+          path="/app/editarcliente/:id"
           element={<EditarCliente />}
         />
       </Routes>
