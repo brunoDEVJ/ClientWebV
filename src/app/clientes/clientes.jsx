@@ -61,7 +61,7 @@ function Clientes() {
   useEffect(() => {
     let listaCliente = [];
 
-    const urlGet = Axios.get("http://localhost:3001/listar-clientes");
+    const urlGet = Axios.get("https://serverwebv.herokuapp.com/listar-clientes");
     urlGet.then((resp) => {
       const docs = resp.data.clientes;
 
@@ -92,7 +92,7 @@ function Clientes() {
   }
 
   const handleDelete = () => {
-    Axios.delete(`http://localhost:3001/deletar-cliente/${confirmacaoId}`);
+    Axios.delete(`https://serverwebv.herokuapp.com/deletar-cliente/${confirmacaoId}`);
     setExcluido(confirmacaoId);
     setConfirmacao(false);
   };
@@ -111,7 +111,7 @@ function Clientes() {
   function abrirModal(id) {
     setConfirmacaoId(id);
     setAberto(true);
-    Axios.get(`http://localhost:3001/listar-cliente/${id}`).then((response) => {
+    Axios.get(`https://serverwebv.herokuapp.com/listar-cliente/${id}`).then((response) => {
       const clientes = response.data.cliente;
       setCadastro({
         ...cadastro,
@@ -136,7 +136,7 @@ function Clientes() {
   }
 
   const salvarClienteModal = () => {
-    Axios.put(`http://localhost:3001/atualizar-cliente/${confirmacaoId}`, {
+    Axios.put(`https://serverwebv.herokuapp.com/atualizar-cliente/${confirmacaoId}`, {
       nome: cadastro.nome.toUpperCase(),
       cnpj: cadastro.cnpj,
       ie: cadastro.ie,
@@ -175,7 +175,7 @@ function Clientes() {
   }
 
   function cancelar() {
-    Axios.get(`http://localhost:3001/listar-cliente/${confirmacaoId}`).then((response) => {
+    Axios.get(`https://serverwebv.herokuapp.com/listar-cliente/${confirmacaoId}`).then((response) => {
       const clientes = response.data.cliente;
       setCadastro({
         ...cadastro,

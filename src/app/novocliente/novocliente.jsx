@@ -40,7 +40,7 @@ function NovoCliente() {
   const [success, setSuccess] = useState("N");
 
   const cadastrarCliente = () => {
-    Axios.post("http://localhost:3001/criar-cliente", {
+    Axios.post("https://serverwebv.herokuapp.com/criar-cliente", {
       nome: cadastro.nome.toUpperCase(),
       cnpj: cadastro.cnpj,
       ie: cadastro.ie,

@@ -55,7 +55,7 @@ function EditarCliente() {
   const [success, setSuccess] = useState("N");
 
   useEffect(() => {
-    Axios.get(`http://localhost:3001/listar-cliente/${id}`).then((response) => {
+    Axios.get(`https://serverwebv.herokuapp.com/listar-cliente/${id}`).then((response) => {
       const clientes = response.data.cliente;
       setCadastro({
         ...cadastro,
@@ -76,7 +76,7 @@ function EditarCliente() {
   }, [id]);
 
   const alterarCliente = () => {
-    Axios.put(`http://localhost:3001/atualizar-cliente/${id}`, {
+    Axios.put(`https://serverwebv.herokuapp.com/atualizar-cliente/${id}`, {
       nome: cadastro.nome.toUpperCase(),
       cnpj: cadastro.cnpj,
       ie: cadastro.ie,
