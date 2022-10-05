@@ -22,9 +22,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Site />} />
-        <Route path="*/app" element={<Login />} />
-        <Route path="/app/novaconta" element={<NovaConta />} />
+        <Route exact path="/" element={<Site />} />
+        <Route exact path="/app" element={<Login />} />
+        <Route exact path="/app/novaconta" element={<NovaConta />} />
         <Route path="/app/resetsenha" element={<ResetSenha />} />
         <Route path="/app/clientes" element={<Clientes />} />
         <Route path="/app/home" element={<Home />} />
