@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import {  regTEL, regCNPJ } from "../../regex/regex";
-
 import "./listagrupoproduto.css";
 
 function Listagrupoproduto(props) {
@@ -12,36 +10,32 @@ function Listagrupoproduto(props) {
         <thead className="listaH">
           <tr className="table table-primary text-center">
             <th className="" scope="col">ID</th>
-            <th scope="col">NOME</th>
-            <th scope="col">CNPJ</th>
-            <th scope="col">TELEFONE</th>
-            <th scope="col">EMAIL</th>
-            <th scope="col">ENDEREÇO</th>
-            <th scope="col">Nº</th>
-            <th scope="col">COMPLE</th>
-            <th scope="col">BAIRRO</th>
-            <th scope="col">CIDADE</th>
+            <th scope="col">DESCRICAO</th>
+            <th scope="col">MARGEMMINIMA</th>
+            <th scope="col">MARGEMMAXIMA</th>
+            <th scope="col">ATIVO</th>
+            <th scope="col">PERCENTUAL MARKUP</th>
+            <th scope="col">VENDEDOR ALTERA PREÇO</th>
+            <th scope="col">COD EMP</th>
           </tr>
         </thead>
         <tbody className="listaC">
-          {props.arrayClient.map((cliente) => {
+          {props.arrayGrupoProduto.map((grupoproduto) => {
             return (
-                <tr className="listaCB text-center " key={cliente.id}>
+                <tr className="listaCB text-center " key={grupoproduto.id}>
                 <td>
-                  <Link className="links" to="#" onClick={() => props.pegarID(cliente.id)}><i className="fa-solid fa-magnifying-glass"></i> {cliente.id}
+                  <Link className="links" to="#" onClick={() => props.pegarID(grupoproduto.id)}><i className="fa-solid fa-magnifying-glass"></i> {grupoproduto.id}
                   </Link>
                 </td>
-                <td>{cliente.nome}</td>
-                <td>{cliente.cnpj.replace(regCNPJ, "$1.$2.$3/$4-$5")}</td>
+                <td>{grupoproduto.DESCRICAO}</td>
+                <td>{grupoproduto.MARGEMMINIMA}</td>
                 <td>
-                  {cliente.telefone.toString().replace(regTEL, "($1) 9$2-$3")}
+                  {grupoproduto.MARGEMMAXIMA}
                 </td>
-                <td>{cliente.email}</td>
-                <td>{cliente.endereço}</td>
-                <td>{cliente.n}</td>
-                <td>{cliente.complemento}</td>
-                <td>{cliente.bairro}</td>
-                <td>{cliente.cidade}</td>
+                <td>{grupoproduto.ATIVO}</td>
+                <td>{grupoproduto.PERCENTUAL_MARKUP}</td>
+                <td>{grupoproduto.VENDEDOR_ALTERA_PRECO}</td>
+                <td>{grupoproduto.CODEMP}</td>
               </tr>
             );
           })}

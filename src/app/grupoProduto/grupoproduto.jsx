@@ -175,7 +175,7 @@ function Grupoproduto() {
         <div className="row alinhamento">
           <div className="col-4">
             <Link
-              to="/app/novogruproproduto"
+              to="/app/novogrupoproduto"
               className="btn btn-primary clienteb mb-1"
               type="button"
             >
@@ -204,7 +204,7 @@ function Grupoproduto() {
           </div>
         </div>
         <Listagrupoproduto
-          arrayClient={grupoproduto}
+          arrayGrupoProduto={grupoproduto}
           clickDelete={confirmDeleteUser}
           pegarID={abrirModal}
         />

@@ -15,6 +15,7 @@ import ResetSenha from "./app/resetsenha/resetsenha";
 import Clientes from "./app/clientes/clientes";
 import GrupoProduto from "./app/grupoProduto/grupoproduto";
 import NovoCliente from "./app/novocliente/novocliente.jsx";
+import NovoGrupoProduto from "./app/novogrupoproduto/novogrupoproduto.jsx";
 //import EditarCliente from "./app/editarcliente/editarcliente.jsx";
 import Home from "./app/home/home.jsx";
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/app/clientes" element={<Clientes />} />
         <Route path="/app/home" element={<Home />} />
         <Route path="/app/novocliente" element={<NovoCliente />} />
+        <Route path="/app/novogrupoproduto" element={<NovoGrupoProduto/>} />
         <Route path="/app/grupoproduto" element={<GrupoProduto />} />
         {/* <Route
           path="/app/editarcliente/:id"
