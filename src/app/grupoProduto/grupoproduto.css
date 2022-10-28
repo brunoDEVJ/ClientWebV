@@ -1,0 +1,66 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+.fonts {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1em;
+}  
+
+.titulo {
+    margin-top: 70px;
+
+}
+
+.titulo h1 {
+    padding: 0 1%;
+
+}
+
+.btn-pdf{
+    margin-left: 1px;
+}
+
+.alinhamento {
+    padding: 0 1%;
+}
+
+.clienteb {
+    margin-right: 2%;
+}
+
+.titulos {
+    font-size: 30px;
+    margin-left: 28%;
+}
+
+
+
+.modalbody {
+    background-color: #c4dbfc;
+}
+
+.modalheader{
+    background-color: #0d6efd;
+    color: #fafafa;
+}
+
+.modalfooter {
+    background-color: #c4dbfc;
+}
+
+.btn-modal {
+    width: 100px;
+    
+}
+
+.linksbutton {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.containerButton{
+    display: flex;
+    flex-direction: column;
+}

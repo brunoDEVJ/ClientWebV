@@ -1,0 +1,29 @@
+.acao-icon {
+    margin: 0 7px;
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+.col-acao {
+    width: 90px;
+    
+}
+
+.listaC {
+    font-size: 0.85em;
+    font-weight: 400;
+}
+
+.listaH {
+    font-size: 0.90em;
+}
+
+.listaCB:hover {
+    background-color:#0d6dfd29	;
+}
+
+.links {
+    text-decoration: none;
+}

@@ -210,7 +210,7 @@ function Clientes() {
       <Navbar />
 
       <div className="container-fluid titulo fonts ">
-        <h1>Cadastro de Clientes</h1>
+        <h1>Clientes</h1>
         <div className="row alinhamento">
           <div className="col-4">
             <Link

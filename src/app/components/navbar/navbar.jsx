@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
@@ -65,6 +66,17 @@ function Navbar() {
                       href="#post"
                     >
                       Clientes
+                    </Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link
+                      to="/app/grupoproduto"
+                      className="dropdown-item"
+                      aria-current="page"
+                      href="#post"
+                    >
+                      Grupo Produto
                     </Link>
                   </li>
                   <li>
